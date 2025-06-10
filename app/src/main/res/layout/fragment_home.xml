@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEB3B"
+        android:layout_marginTop="22dp"
+        android:gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIKE"
+            android:textSize="28sp"
+            android:textStyle="italic"
+            android:textColor="#1C3BE4"
+            android:layout_weight="1">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/btn_to_basket"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/basket_yellow05">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="22dp"
+        android:gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFFICIAL BREND"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="#1C3BE4"
+            android:layout_weight="1">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See all sales"
+            android:textSize="20sp"
+            android:textColor="#102CCA"
+            android:textStyle="italic">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible">
+
+    </ProgressBar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main_lsit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item_shop"
+        app:spanCount="2">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="22dp"
+        android:gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See all brends"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="#1C3BE4"
+            android:layout_weight="1">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to feedBack"
+            android:textSize="20sp"
+            android:textColor="#102CCA"
+            android:textStyle="italic">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
